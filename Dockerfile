@@ -15,4 +15,7 @@ curl -fsS -m 10 --retry 5 \$BADGE_PING
 EOF
 
 RUN chmod +x /run.sh
+
+USER 1000
+
 CMD [ "/run.sh" ]

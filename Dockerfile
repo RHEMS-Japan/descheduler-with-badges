@@ -10,7 +10,7 @@ RUN apt-get update; apt-get install curl -y
 COPY <<EOF /run.sh
 #!/bin/sh
 ### made by rayman@rhems-japan.co.jp
-/bin/descheduler --policy-config-file /policy-dir/policy.yaml --v 3
+/bin/descheduler --policy-config-file /policy-dir/policy.yaml --v 4
 if [ \$? = 0 ]; then
     curl -fsS -m 10 --retry 5 \$BADGE_PING
 else

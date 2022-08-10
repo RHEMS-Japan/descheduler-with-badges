@@ -15,6 +15,7 @@ if [ \$? = 0 ]; then
     curl -fsS -m 10 --retry 5 \$BADGE_PING
 else
    curl -fsS -m 10 --retry 5 \$BADGE_PING?status=false
+fi
 EOF
 
 RUN chmod +x /run.sh

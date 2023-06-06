@@ -1,5 +1,6 @@
 # syntax = docker/dockerfile:1.3-labs
-From k8s.gcr.io/descheduler/descheduler:v0.24.1
+
+From registry.k8s.io/descheduler/descheduler:v0.27.1
 
 FROM debian:stable-slim
 
